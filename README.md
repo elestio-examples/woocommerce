@@ -22,3 +22,20 @@ You can connect to your DB through PHPMyAdmin:
     https://[CI_CD_DOMAIN]:24580/
     Login: root (set in reverse proxy configuration)
     Password: [ADMIN_PASSWORD] (set in reverse proxy configuration)
+
+
+To activate SMTP / Email sending please follow those instructions:
+https://wordpress.org/plugins/wp-mail-smtp/
+
+You can use our transactionnal smtp server with those settings:
+
+    SMTP Host: 172.17.0.1
+    SMTP Port: 25
+    Encryption: No encryption
+    Authentication: No
+    Username: (leave empty)
+    Password: (leave empty)
+    From Email address: [DOMAIN]@vm.elestio.app
+
+Of course you can also use any third party SMTP (AWS SESn Sendgrid, ...) and then use your own domain and from address
+
