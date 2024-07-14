@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   database:
-    image: mysql:latest
+    image: mysql:8.4
     volumes:
       - ./db:/var/lib/mysql
     restart: always
